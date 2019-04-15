@@ -16,20 +16,18 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-      }
-      
-      p {
         font-size: 300%;
+        flex-direction: column;
       }
     </style>
   </head>
   <body>
-    <p></p>
+    <p id="time"></p>
     <script>
       setInterval(() => {
         const dateDiff = new Date() - new Date("8/26/2003");
         const val = (dateDiff/1000/3600/24).toFixed(5);
-        document.querySelector('p').textContent = val;
+        document.querySelector('#time').textContent = val;
       }, 10);
     </script>
   </body>
