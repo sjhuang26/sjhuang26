@@ -26,7 +26,8 @@
     <p></p>
     <script>
       setInterval(() => {
-        const val = ((new Date()-new Date("8/26/2003"))/1000/3600/24).toFixed(7));
+        const dateDiff = new Date() - new Date("8/26/2003");
+        const val = (dateDiff/1000/3600/24).toFixed(7);
         document.querySelector('p').textContent = val;
       }, 10);
     </script>
