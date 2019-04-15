@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>@sjhuang26 Web Terminal</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        background: #222;
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      
+      p {
+        font-size: 300%;
+      }
+    </style>
+  </head>
+  <body>
+    <p></p>
+    <script>
+      setInterval(() => {
+        const val = ((new Date()-new Date("8/26/2003"))/1000/3600/24).toFixed(7));
+        document.querySelector('p').textContent = val;
+      }, 10);
+    </script>
+  </body>
+</html>
