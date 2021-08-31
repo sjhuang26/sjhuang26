@@ -1,0 +1,7 @@
+# example netlify.toml
+[build]
+    publish = "static/"
+[[redirects]]
+    from = "/"
+    to = "https://sjeff.dev"
+    force = true
